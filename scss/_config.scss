@@ -1,0 +1,13 @@
+$primary_color: #14213d;
+$secondary_color: #fca311;
+$ternary_color: #E5e5e5;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition_ease-out{
+    transition: all 0.3s ease-out;
+}

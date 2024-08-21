@@ -1,0 +1,64 @@
+.about{
+    &-bio_image{
+
+        height: 50vh;
+        padding-top: 20vh;
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        background:
+        linear-gradient(
+            to right,
+            rgba($primary_color, 0.9),
+            rgba($primary_color, 0.3)
+        ),
+        url('../img/sulaiman.jpg') center top;
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        p{
+         padding-bottom: 2rem;   
+        }
+    }
+
+    &_bio{
+        width: 80vw;
+        text-align: center;
+    }
+    .jobs{
+        width: 60vw;
+        margin: 0.5rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+        p{
+            color: $primary_color;
+        }
+        h3, h6{
+            color: $primary_color;
+            margin: 0.3rem 0;
+        }
+        &_job{
+            background: lighten($ternary_color, 8%);
+            border-radius: 1rem;
+            padding: 1rem;
+            border-bottom: 4px solid $secondary_color;
+        }
+    }
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+        .social{
+            color: $primary_color;
+        }
+    }
+    &_footer{
+        color: $primary_color;
+        transform: 
+        rotate(90deg)
+        translate(-4rem, -4rem);
+    }
+}
